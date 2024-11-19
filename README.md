@@ -1,5 +1,5 @@
 # Web Calculator project
-The aim of this project is to create a website for numerical as well as calculus computations. For convenience, the server uses a locally deployed Express framework. However, it is also possible to make the website accessible on the public internet. This would require renting a cloud server as well as purchasing a domain.  
+The aim of this project is to create a website for numerical and calculus computations. For convenience, the server uses a locally deployed Express framework. However, it is also possible to make the website accessible on the public internet. This would require renting a cloud server as well as purchasing a domain.  
 
 ## Web demo 1 - Interface
 ![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/options%26language.gif)
