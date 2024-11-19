@@ -2,9 +2,7 @@
 The aim of this project is to create a website for numerical and calculus computations. For convenience, the server uses a locally deployed Express framework. However, it is also possible to make the website accessible on the public internet. This would require renting a cloud server as well as purchasing a domain.  
 
 ## Web demo 1 - Interface
-The calculator features two displays:  
-- The top display is for input, allowing users to enter expressions either via the keyboard or by clicking the on-screen buttons.  
-- The second display shows the results, rendered dynamically in LaTeX for clear formatting.
+- There are two dispalys on the calculator. The top display is for input, allowing users to enter expressions either via the keyboard or by clicking the on-screen buttons. And The second display shows the results, rendered dynamically in LaTeX for clear formatting.  
 
 ![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/options%26language.gif)
 - The website is designed to include a drop-down **Options** menu, allowing users to switch between calculating derivatives and integrals.  
