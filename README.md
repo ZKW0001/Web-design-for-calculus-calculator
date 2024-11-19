@@ -19,7 +19,7 @@ There are two dispalys on the calculator. The top display is for input, allowing
 
 ## Web demo 2 - Numerical computation
 ![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/numerical1.gif)
-![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/numerical2.gif)
+![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/numerical.gif)
 - The calculator is capable of solving a wide range of numerical problems, from basic arithmetic operations (**addition, subtraction, multiplication, division**) to more advanced functions like **trigonometric functions, logarithms, exponentials, square roots, and absolute values**. All calculations are performed on the front-end using **Math.js**, and the results are displayed in LaTeX format with the help of the **KaTeX** library. If the calculator is unable to perform a calculation, **"Error"** will be displayed on the output screen.  
 <br>
       
