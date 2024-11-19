@@ -1,0 +1,431 @@
+/* Header styles */
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    margin: 0px auto;
+    box-shadow: 5px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo styling */
+.logo1 {
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.logo1 img {
+    height: 62px;
+    transition: 0.5s;
+}
+
+.logo1 img:hover {
+    height: 62px;
+    margin: -3px -3px -3px -3px;
+}
+
+.logo1 .hover-text {
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 320px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    font: cambria;
+    font-style: italic;
+}
+
+.logo1:hover .hover-text {
+    display: inline-block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        left: 310px;
+        opacity: 0;
+    }
+    to {
+        left: 320px;
+        opacity: 1;
+    }
+}
+
+/* Container for calculus and language options */
+.options-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Dropdown styles for calculus options */
+.calculus-options {
+    position: relative;
+    height: 45px;
+    width: 98px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    border-radius: 15px;
+}
+
+.calculus-options > a {
+    background-color: #ffffff;
+    border-radius: 14px;
+    width: 98px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.calculus-options > a:hover {
+    background-color: #eeeded;
+}
+
+.calculus-options a {
+    float: left;
+    padding: 5px 10px 8.5px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #535353;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.calculus-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 51px;
+    width: 120px;
+    border-radius: 15px;
+    padding: 10px 0px;
+    border: 2px solid #e6e6e6;
+    overflow: hidden;
+}
+
+.calculus-content.show {
+    display: block;
+}
+
+.calculus-content .derivative,
+.calculus-content .integral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.calculus-content .derivative:hover,
+.calculus-content .integral:hover {
+    background-color: #eeeded;
+}
+
+/* Animation */
+@keyframes swing-in-top-bck {
+    0% {
+        transform: rotateX(70deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.swing-in-top-bck {
+    animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+/* Language dropdown styles */
+.language-options {
+    position: relative;
+    height: 45px;
+    width: 60px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.language-options > a {
+    background-color: #ffffff;
+    border-radius: 14px;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.language-options > a:hover {
+    background-color: #eeeded;
+}
+
+.language-options a {
+    float: left;
+    padding: 5px 10px 8.5px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #535353;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.language-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 51px;
+    width: 60px;
+    height: 45px;
+    border-radius: 15px;
+    padding: 0px 0px;
+    border: 2px solid #e6e6e6;
+    overflow: hidden;
+}
+
+.language-content.show {
+    display: block;
+}
+
+.language-content .language-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.language-content .language-item:hover {
+    background-color: #eeeded;
+}
+
+/* Color button styles */
+.color {
+    position: relative;
+    height: 45px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    border-radius: 15px;
+    transition: background-color 0.3s, border-color 0.3s;
+    overflow: hidden;
+}
+
+.color a {
+    float: left;
+    padding: 8px 15px;
+    font-weight: 1000;
+    font-size: 20px;
+    color: #535353;
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.color:hover {
+    background-color: #eeeded;
+}
+
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#dark-mode-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    z-index: -1;
+    clip-path: circle(0% at top right);
+    transition: clip-path 0.5s ease-in-out;
+}
+
+/* Dark mode styles */
+.dark-mode .header,
+.dark-mode .input,
+.dark-mode .latex-display,
+.dark-mode button,
+.dark-mode .calculus-options,
+.dark-mode .language-options,
+.dark-mode .color,
+.dark-mode .calculus-content,
+.dark-mode .language-content {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #3a3a3a;
+}
+
+.dark-mode .logo1 .hover-text {
+    color: #b7b1b1;
+}
+
+
+.dark-mode .calc{
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #3a3a3a;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .calculus-options > a,
+.dark-mode .language-options > a,
+.dark-mode .color > a {
+    color: #ffffff;
+}
+
+.dark-mode .calculus-options > a,
+.dark-mode .language-options > a{
+    background-color: #2a2a2a;
+}
+
+.dark-mode .calculus-options > a:hover,
+.dark-mode .language-options > a:hover,
+.dark-mode .color:hover,
+.dark-mode .calculus-content a:hover,
+.dark-mode .language-content a:hover {
+    background-color: #3a3a3a;
+}
+
+.dark-mode .input,
+.dark-mode .latex-display {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #4a4a4a;
+}
+
+.dark-mode .calculus-content a,
+.dark-mode .language-content a {
+    color: #ffffff;
+}
+
+
+/* Calculator styles */
+.calc {
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    margin: 120px auto 0;
+    height: 620px;
+    border: 2px solid #e5e7eb;
+    transition: background-color 0.1s;
+}
+
+.input-container {
+    margin-bottom: 16px;
+}
+
+.input, .latex-display {
+    width: 100%;
+    height: 64px;
+    background-color: #f3f4f6;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+    box-sizing: border-box;
+}
+
+.input {
+    text-align: left;
+}
+
+.latex-display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+/* Calculator button styles */
+button {
+    background-color: white;
+    color: #374151;
+    font-weight: 600;
+    padding: 16px 16px;
+    border-radius: 15px;
+    border: 2px solid #e5e7eb;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+button.special {
+    background-color: #ebebeb;
+}
+
+button.special:hover {
+    background-color: #d1d5db;
+    color: #111827;
+}
+
+#input:focus {
+    outline: none;
+    caret-color: black;
+}
+
+.dark-mode button {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-color: #4a4a4a;
+}
+
+.dark-mode button:hover {
+    background-color: #4a4a4a;
+}
+
+.dark-mode button.special {
+    background-color: #4a4a4a;
+}
+
+.dark-mode button.special:hover {
+    background-color: #5a5a5a;
+}

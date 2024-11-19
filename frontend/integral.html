@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integral Calculator</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.1/math.min.js"></script>
+</head>
+<body>
+    <div id="dark-mode-overlay"></div>
+
+    <div class="header">
+        <div class="logo1">
+            <img src="logo.png" alt="Logo">
+            <span class="hover-text">——by Kaiwen Zhao</span>
+        </div>
+        <div class="options-container">
+            <div class="calculus-options">
+                <a href="#" class="options-toggle">☰ Options</a>
+                <div class="calculus-content" id="calculus-dropdown">
+                    <a href="main.html" class="derivative">Derivative</a>
+                    <a href="integral.html" class="integral">Integral</a>
+                </div>
+            </div>
+            <div class="language-options">
+                <a href="#" class="language-toggle">EN</a>
+                <div class="language-content" id="language-dropdown">
+                    <a href="#" class="language-item">CN</a>
+                </div>
+            </div>
+            <div class="color">
+                <a href="#">☼</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="calc">
+        <div class="input-container">
+            <input type="text" id="input" class="input" placeholder="Enter expression">
+        </div>
+        <div id="latex-display" class="latex-display"></div>
+        <div class="button-grid">
+            <button onclick="handleButtonClick('∫')">∫</button>
+            <button onclick="handleButtonClick('π')">π</button>
+            <button onclick="handleClear()" class="special">C</button>
+            <button onclick="handleBackspace()" class="special">←</button>
+            <button onclick="handleButtonClick('7')">7</button>
+            <button onclick="handleButtonClick('8')">8</button>
+            <button onclick="handleButtonClick('9')">9</button>
+            <button onclick="handleButtonClick('/')">/</button>
+            <button onclick="handleButtonClick('4')">4</button>
+            <button onclick="handleButtonClick('5')">5</button>
+            <button onclick="handleButtonClick('6')">6</button>
+            <button onclick="handleButtonClick('*')">*</button>
+            <button onclick="handleButtonClick('1')">1</button>
+            <button onclick="handleButtonClick('2')">2</button>
+            <button onclick="handleButtonClick('3')">3</button>
+            <button onclick="handleButtonClick('-')">-</button>
+            <button onclick="handleButtonClick('0')">0</button>
+            <button onclick="handleButtonClick('.')">.</button>
+            <button onclick="handleButtonClick('x')">x</button>
+            <button onclick="handleButtonClick('+')">+</button>
+            <button onclick="handleButtonClick('sin(')">sin</button>
+            <button onclick="handleButtonClick('cos(')">cos</button>
+            <button onclick="handleButtonClick('tan(')">tan</button>
+            <button onclick="handleButtonClick('e^')">e^</button>
+            <button onclick="handleButtonClick('ln(')">ln</button>
+            <button onclick="handleButtonClick('^')">^</button>
+            <button onclick="handleButtonClick('(')">(</button>
+            <button onclick="handleButtonClick(')')">)</button>
+            <button onclick="handleButtonClick('sqrt(')">√</button>
+            <button onclick="handleButtonClick('log10(')">log10</button>
+            <button onclick="handleButtonClick('abs(')">abs</button>
+            <button onclick="handleCalculate()" class="special">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
