@@ -23,7 +23,6 @@ app.post('/calculate', (req, res) => {
             cleanExpression = cleanExpression.replace(/∫/g, '').replace(/^$$|$$$/g, '');
             result = nerdamer(`integrate(${cleanExpression}, x)`).text('latex');
         } else {
-            // For basic calculations, just return the original expression
             result = cleanExpression;
         }
         
