@@ -6,7 +6,7 @@ The aim of this project is to create a website to numerical as well as calculus 
 The website is designed to include a drop-down **Options** menu, allowing users to switch between calculating derivatives and integrals.
 After clicking the **Language button**, all instructions on the website will switch to the corresponding language, without refreshing the page. In this case, selecting CN will change the language to Chinese.
 
-![]([https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/darkmode.gif)
+![](https://github.com/ZKW0001/WebCalculator_Project/blob/main/demo/darkmode.gif)
 Clicking the **Color** button toggles the webpage between dark mode and light mode. A short animation is included during the transition.
 
 
