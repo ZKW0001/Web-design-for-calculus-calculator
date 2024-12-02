@@ -15,7 +15,7 @@ app.post('/calculate', (req, res) => {
         const { expression, operation } = req.body;
         
         let result;
-        let cleanExpression = expression.replace(/\s/g, ''); // Remove all whitespace
+        let cleanExpression = expression.replace(/\s/g, ''); // Remove all whitespace characters from the expression
         
         // Check if the operation is a derivative or integral
         if (operation === 'derivative') {
